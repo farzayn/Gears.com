@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="HTML, CSS" />
+  <meta name="description" content="..." />
+  <title>Document</title>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+  </style>
+  <script>
+    function showDiscount() {
+      document.getElementById("totalMessage").textContent = "Your total is 9.99";
+    }
+  </script>
+</head>
+<body>
+
+  <button onclick="showDiscount()">Get Discount</button>
+  <div id="totalMessage"></div>
+
+  <input type="checkbox" id="toggleApple">
+  <label for="toggleApple">
+    <button type="button">Apple Pay</button>
+  </label>
+
+  <input type="checkbox" id="toggleVisa">
+  <label for="toggleVisa">
+    <button type="button">Visa</button>
+  </label>
+
+  <input type="checkbox" id="togglePayPal">
+  <label for="togglePayPal">
+    <button type="button">PayPal</button>
+  </label>
+
+  <!-- Visa tab content -->
+  <div id="visa" class="content">
+    <label>Enter your CVV:</label><br>
+    <input type="text" placeholder="CVV">
+  </div>
+   <div id="visa" class="content">
+    <label>Enter your Adress:</label><br>
+    <input type="text" placeholder="Adress">
+  </div>
+  <a href="Shipping.html">Submit</a>
+
+</body>
+</html>
