@@ -21,6 +21,12 @@
 
   <button onclick="showDiscount()">Get Discount</button>
   <div id="totalMessage"></div>
+<script>
+  function showDiscount() {
+    alert("You've unlocked a discount!");
+    document.getElementById("totalMessage").innerText = "10 % discount applied.";
+  }
+</script>
 
   <input type="checkbox" id="toggleApple">
   <label for="toggleApple">
